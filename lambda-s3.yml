@@ -45,6 +45,7 @@ Resources:
           - "LambdaExecutionRole"
           - "Arn"
       Runtime: "nodejs12.x"
+      Timeout: 120
       Code: 
         S3Bucket: !Ref S3BucketParam
         S3Key: !Ref S3KeyParam
